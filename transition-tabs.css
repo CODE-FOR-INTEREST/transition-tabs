@@ -1,0 +1,24 @@
+.transition-tabs {
+  position: relative;
+  width: 300px;
+  height: 30px;
+}
+.transition-tabs div{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  text-align: center;
+}
+.transition-tabs div span{
+  flex: 1;
+  color: white;
+  line-height: 30px;
+  cursor: pointer;
+}
+.transition-tabs #mask rect {
+  position: absolute;
+  transition: transform 0.4s ease-in-out 0.1s;
+  transform: translate3d(0,0,0);
+}

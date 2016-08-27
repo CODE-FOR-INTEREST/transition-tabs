@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>transition-tabs</title>
+    <link rel="stylesheet" href="transition-tabs.css">
+  </head>
+  <body>
+    <div class="transition-tabs">
+      <svg width="100%" height="100%">
+        <defs>
+          <mask id="mask">
+            <rect x="0" y="0" width="33.33%" height="100%" fill="white"  />
+          </mask>
+        </defs>
+        <!-- 背景 -->
+        <rect x="0" y="0" width="100%" height="100%" fill="#5d5070"/>
+        <!-- 顶层遮罩 -->
+        <g mask="url(#mask)">
+          <rect x="0" y="0" width="33.33%" height="100%" fill="#75adcc"/>
+          <rect x="33.33%" y="0" width="33.33%" height="100%" fill="#f3b16d"/>
+          <rect x="66.66%" y="0" width="33.33%" height="100%" fill="#e55b56"/>
+        </g>
+      </svg>
+      <!-- 底层的文字，点击文字切换动画 -->
+      <div>
+        <span>前85%</span>
+        <span>85%~95%</span>
+        <span>后5%</span>
+      </div>
+    </div>
+    <script src="transition-tabs.js"></script>
+  </body>
+</html>
